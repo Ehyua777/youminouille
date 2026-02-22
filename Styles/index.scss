@@ -1,0 +1,141 @@
+body {
+    font-family: "Outfit", sans-serif;
+
+    header {
+
+        nav {
+            a {
+                img {
+                    width: 75px;
+                    height: 65px;
+                }
+
+            }
+
+        }
+    }
+
+    main {
+        margin-top: 100px;
+
+        #hero {
+            background-image: url('https://voyager-en-cote-divoire.com/wp-content/uploads/2022/10/foufou-c.jpg');
+            background-size: cover;
+            border-radius: 0px 0px 10px 10px;
+
+        }
+
+        .hero-text {
+            color: white;
+            font-weight: bold;
+
+            h1,
+            h2,
+            p {
+                background-color: rgb(green, 0.4);
+                border-radius: 0px 10px 10px 0px;
+                padding-left: 30px;
+            }
+        }
+
+        .hero-img {
+            border-radius: 50%;
+            background-color: white;
+            opacity: 85%;
+        }
+
+        .headline {
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        .about-text {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 100%;
+            justify-content: center;
+        }
+
+        .chef {
+            display: grid;
+            justify-content: end;
+
+            figcaption {
+                text-align: center;
+                font-style: italic;
+                background-color: rgb(green, 0.8);
+                color: white;
+                font-weight: bolder;
+            }
+        }
+
+        .separator {
+            height: 1px;
+            background-color: rgb(3, 145, 3);
+            margin-bottom: 5px;
+        }
+
+        form {
+            .group {
+                position: relative;
+
+                input {
+                    padding-left: 25px;
+                    border-radius: 5px;
+                }
+
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 25px;
+                    padding: 6px 8px;
+                    color: green;
+                }
+            }
+
+            textarea {
+                border-color: green;
+                border-radius: 5px;
+                background-color: #f8f8f8;
+                resize: none;
+                width: 100%;
+                height: 70%;
+            }
+
+            button {
+                margin-top: -45px;
+                cursor: pointer;
+            }
+
+            bottom: hover {
+                transform: scale(1.05);
+            }
+        }
+
+        .iframe-container {
+            border: 1px solid green;
+            height: 260px;
+            border-radius: 10px;
+
+            iframe {
+                width: 100%;
+                height: 258px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    footer {
+        background-image: url(https://th.bing.com/th/id/OIP.l_C3vh6fJ2todEsYjP4wWQHaHa?rs=1&pid=ImgDetMain);
+        background-size: cover;
+        background-position: bottom;
+        color: white;
+        font-size: large;
+        border-radius: 10px 10px 0px 0px;
+
+        i {
+            color: green;
+        }
+    }
+}
