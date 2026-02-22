@@ -21,244 +21,36 @@
     <link rel="stylesheet" href="Styles/index.css">
     <link rel="shortcut icon" type="image/x-icon" href="Img/youminouilles-icon.png">
     <title>Youminouilles restau</title>
+    <script defer src="assets/js/partials.js"></script>
 </head>
 
 <body>
+    <!--Header bigining-->
     <header>
-        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <img src="Img/YUMINOUILLE3.svg" alt="Yuminouilles">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav text-uppercase">
-                        <li class="nav-item">
-                            <a href="#1" class="nav-link">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#2" class="nav-link">Menus</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#3" class="nav-link">A propos de nous</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#4" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div data-include="partials/nav.html"></div>
     </header>
+    <!--Header end-->
+    <!--Main beginning-->
     <main>
-        <section id="hero">
-            <div class="container">
-                <div class="row gy-4 align-items-center">
-                    <div class="col-12 col-md-6">
-                        <article class="hero-text">
-                            <h1>YUMINOUILLES</h1>
-                            <h2>Manger bien, manger bon, manger bio.</h2>
-                            <p>Alors on mange quoi cette fois ?</p>
-                        </article>
-                        <div class="align-items-center">
-                            <button type="button" class="btn btn-success" onclick="window.location.href='index.html'">
-                                Reservez un plat
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <figure class="hero-img">
-                            <img src="Img/YUMINOUILLE2.svg" alt="Yuminouilles" class="w-100">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="menus" class="border-bottom pb-3">
-            <div class="container">
-                <h1 class="headline">Nos menus</h1>
-                <!-- Début des cards -->
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://th.bing.com/th/id/OIP.o8GAaxWpMOWZxg5Rk9pV1QHaE6?rs=1&pid=ImgDetMain"
-                                class="card-img-top" alt="..." height="240"">
-                            <div class=" card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-success">Reserver</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://ncultura.pt/wp-content/uploads/2021/01/Faca-frango-assado-suculento-e-delicioso-03-640x427.jpg"
-                            class="card-img-top" alt="..." height="240">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-success">Reserver</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://i.pinimg.com/736x/41/54/36/415436785b6b0d0ad021f45df9b17d04--dit-african-food.jpg"
-                            class="card-img-top" alt="..." height="240">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural
-                                lead-in to additional content.</p>
-                            <a href="#" class="btn btn-success">Reserver</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://th.bing.com/th/id/OIP.lGKGEY5-IpNq-EFp4r2aMwHaEK?rs=1&pid=ImgDetMain"
-                            class="card-img-top" alt="..." height="240">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-success">Reserver</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- fin des cards -->
-            </div>
-        </section>
-        <section id="about" class="border-bottom">
-            <div class="container">
-                <h1 class="headline">A propos de nous</h1>
-                <div class="row">
-                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-                        <article>
-                            <h3>Manger et sauvez le monde</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti impedit incidunt
-                                molestias, odit corrupti repudiandae veniam architecto nobis accusamus aliquam
-                                voluptatibus
-                                nihil culpa? Consectetur commodi laboriosam soluta, voluptas iure impedit.
-
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio impedit similique quidem,
-                                omnis error sit ad ab. Deleniti ex minima quibusdam excepturi quasi reiciendis
-                                consequuntur,
-                                quis et suscipit rerum. Incidunt?
-
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio impedit similique quidem,
-                                omnis error sit ad ab. Deleniti ex minima quibusdam excepturi quasi reiciendis
-                                consequuntur,
-                                quis et suscipit rerum. Incidunt?
-                            </p>
-                        </article>
-                    </div>
-                    <div class="col">
-                        <figure class="chef">
-                            <img src="https://th.bing.com/th/id/R.4def0e427232157b16a7d87ae878c9ef?rik=spINaNAwNn4RWg&riu=http%3a%2f%2fwww.digestmiami.com%2fwp-content%2fuploads%2f2018%2f06%2f201806_DM_three_767x851.jpg&ehk=MSLOWt4Nvj2byCOjDc3UPZlyHDASJDtOSsxNWnIVD00%3d&risl=&pid=ImgRaw&r=0"
-                                alt="Chef RUCH" class="w-100">
-                            <figcaption>Chefs Allassan Ouattara</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="container">
-                <h1 class="headline">Contact</h1>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="row">
-                            <div class="col d-grid">
-                                <h3>Nontre adresse</h3>
-                                <div class="separator"></div>
-                                <marquee behavior="" direction="">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing...
-                                </marquee>
-                                <div class="iframe-container">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.2156138385935!2d-3.9900010255247502!3d5.384068735355705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1935584523fa5%3A0xf1df22f1d6f49aff!2sEspace%20Gastronomique%20-%20Le%20Go%C3%BBt%20plus!5e0!3m2!1sfr!2sci!4v1709664007648!5m2!1sfr!2sci"
-                                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <form action="">
-                            <h3>Laissez nous un message</h3>
-                            <div class="separator"></div>
-                            <div class="row mt-2">
-                                <div class="col-12 col-md-6">
-                                    <div class="group d-flex flex-column">
-                                        <label for="name">Votre nom</label>
-                                        <input type="text" id="name">
-                                        <i class="fa-solid fa-user"></i>
-                                    </div>
-                                    <div class="group d-flex flex-column">
-                                        <label for="number">Votre numéro</label>
-                                        <input type="number" id="number">
-                                        <i class="fa-solid fa-phone"></i>
-                                    </div>
-                                    <div class="group d-flex flex-column">
-                                        <label for="email">Votre couriel</label>
-                                        <input type="email" id="name">
-                                        <i class="fa-solid fa-envelope"></i>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <label for="message">Votre message</label>
-                                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col d-grid gap-2 col-6 mx-auto">
-                                    <button type="submit" class="btn btn-success">Envoyer</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!--Hero bigging-->
+        <div data-include="partials/hero.html"></div>
+        <!--Hero edding-->
+        <!--Menu-->
+        <div data-include="partials/menu.html"></div>
+        <!--End menu-->
+        <!--About-->
+        <div data-include="partials/about.html"></div>
+        <!--About end-->
+        <!--Contact-->
+        <div data-include="partials/contact.html"></div>
+        <!--End contact-->
     </main>
+    <!--Main end-->
+    <!--footer begin-->
     <footer class="mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <p>@Restaurent Youminouilles 2024</p>
-                </div>
-                <div class="col-12 col-md-4 text-md-center">
-                    <p>Powerded by EHYUA LTD</p>
-                </div>
-                <div class="col-12 col-md-4 text-md-end">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#5" target="_blank">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#6">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#7">
-                                <i class="fa-brands fa-tiktok"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <div data-include="partials/footer.html"></div>
     </footer>
+    <!--footer end-->
 </body>
 
 </html>
